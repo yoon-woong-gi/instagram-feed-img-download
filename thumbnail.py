@@ -3,9 +3,15 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-id = '921.03'
-password = 'Sterbild72!'
-search_id = 'noodle.zip'
+from photo_down import information
+
+def information() :
+    global id, password, search_id, feed, times
+    id=input('아이디를 입력해주세요 : ')
+    password  = input('비밀번호를 입력해주세요 : ')
+    search_id = input('검색 할 아이디를 입력해주세요 : ')
+
+information()
 
 driver = webdriver.Chrome('/Users/yoon/Desktop/instaPhoto/chromedriver')
 driver.get('https://instagram.com')

@@ -83,13 +83,7 @@ def window_new_tap(temp) :
 
 #===========================================================
 
-id = '921.03'
-password = 'Sterbild72!'
-search_id = 'noodle.zip'
-feed = 12
-times = 2
-
-#information()
+information()
 driver = webdriver.Chrome('/Users/yoon/Desktop/instaPhoto/chromedriver')
 driver.get('https://www.instagram.com')
 time.sleep(2)

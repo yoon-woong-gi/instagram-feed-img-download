@@ -78,7 +78,7 @@ def img_download(TEMP) :
     ssl._create_default_https_context = ssl._create_unverified_context
     for i, img in enumerate(TEMP) :
         name = f'{search_id}_{feed+count}_{i+1}.png'
-        path = f'/Users/yoon/Desktop/Insta/img/{name}'
+        path = f'/Users/yoon/Desktop/instaPhoto/img/{name}'
         urllib.request.urlretrieve(img, path)
 
 #===========================================================
